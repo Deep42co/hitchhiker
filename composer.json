@@ -1,0 +1,54 @@
+{
+    "name": "deep42/hitchhiker",
+    "description": "A web-based installer wizard for Laravel applications, by Deep42.",
+    "version": "1.0.0",
+    "type": "library",
+    "keywords": [
+        "laravel",
+        "installer",
+        "wizard",
+        "setup",
+        "hitchhiker",
+        "deep42",
+        "livewire"
+    ],
+    "license": "MIT",
+    "homepage": "https://github.com/Deep42co/hitchhiker",
+    "support": {
+        "issues": "https://github.com/Deep42co/hitchhiker/issues",
+        "source": "https://github.com/Deep42co/hitchhiker",
+        "email": "hello@deep42.co"
+    },
+    "authors": [
+        {
+            "name": "Deep42",
+            "email": "hello@deep42.co",
+            "homepage": "https://deep42.co"
+        }
+    ],
+    "require": {
+        "php": "^8.2|^8.3|^8.4",
+        "illuminate/support": "^10.0|^11.0|^12.0|^13.0",
+        "livewire/livewire": "^3.0|^4.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Deep42\\Hitchhiker\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Deep42\\Hitchhiker\\InstallerServiceProvider"
+            ]
+        },
+        "branch-alias": {
+            "dev-main": "1.x-dev"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
